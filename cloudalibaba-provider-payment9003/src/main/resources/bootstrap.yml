@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: nacos-provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.40.100:1111
+      config:
+        server-addr: 192.168.40.100:1111
+        file-extension: yaml
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
